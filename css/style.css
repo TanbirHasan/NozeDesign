@@ -1,0 +1,56 @@
+
+
+.banner-img{
+    z-index: -1;
+}
+
+#banner{
+    z-index: -1;
+}
+
+#headlines{
+    margin-top: -200px;
+    z-index: 10!important;
+}
+
+.incredible{
+    position: sticky;
+    height: fit-content;
+    top: 80px;
+}
+
+.wondering{
+    margin-top: 200px;
+}
+
+.wondering-img{
+    border-radius: 50%;
+    height: 400px;
+    width: 420px;
+}
+
+.matters{
+    position: sticky;
+        height: fit-content;
+        top: 20px;
+        scroll-behavior: auto;
+
+}
+
+
+.matters-img{
+    position: sticky;
+    height: fit-content;
+    top: 80px;
+     
+
+}
+
+.carbon{
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
