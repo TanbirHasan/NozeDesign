@@ -17,31 +17,32 @@
 
     <!-- header section -->
 
-   <header>
-        <div class="navbar bg-base-100  px-16 border-2 border-solid border-bottom">
-            <div class="navbar-start">
+   <header class="relative">
+        <div class="navbar bg-base-100  lg:px-16 border-b  border-solid border-bottom fixed drop-shadow-md sm:px-2">
+            <div class="navbar-start ">
                 <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
                 <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Item 1</a></li>
+                    <li><a class="text-[#654a9b]">Overview</a></li>
                   
-                    <li><a>Item 3</a></li>
+                      <li><a class=" decoration-slate-100  hover:text-[#654a9b] ">Sepecs</a></li>
+                 <li><a class="hover:text-[#654a9b] decoration-slate-100 ">FAQ'S</a></li>
                 </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl"><img src="./Image/logo.svg"/></a>
-                <ul class="menu menu-horizontal p-0 ">
-                <li><a>Overview</a></li>
+                <a class="invisible lg:visible btn btn-ghost normal-case text-xl"><img src="./Image/logo.svg"/></a>
+                <ul class="invisible lg:visible menu menu-horizontal p-0">
+                <li><a class="text-[#654a9b]">Overview</a></li>
                
-                <li><a>Sepecs</a></li>
-                 <li><a>FAQ'S</a></li>
+                <li><a class=" decoration-slate-100  hover:text-[#654a9b] ">Sepecs</a></li>
+                 <li><a class="hover:text-[#654a9b] decoration-slate-100 ">FAQ'S</a></li>
                 </ul>
             </div>
      
             <div class="navbar-end">
-                <span class="pr-10 text-1xl font-semibold">Order for $249</span>
-                <a class="btn">Get started</a>
+                <span class="lg:pr-10 text-1xl font-semibold text-[#654a9b]">Order for $249</span>
+                <a class="btn bg-[#654a9b] px-5 border-none">Pre Order</a>
             </div>
             </div>
 
@@ -49,13 +50,15 @@
 
    <!-- banner section -->
 
-   <section class="banner flex jusfity-center py-10 px-20" id="banner">
-    <div class="mx-5 w-2/4 mt-20">
-        <h2 class="text-6xl mb-10">There's something<br/>new in the air</h2>
-        <p class="text-xl">NOZE is an AI powered air quality monitor that works to<br/> keep you safe. Breathe easy.</pc>
+   <section class="banner flex jusfity-center lg:flex-row lg:py-10 lg:px-20 sm:flex flex-col sm:px-5" id="banner">
+    <div class="banner-inner mx-5 lg:w-2/4 lg:mt-20 sm:w-full">
+        <h2 class="text-6xl mb-10 text-[#210545]">There's something<br/>new in the air</h2>
+        <p class="text-xl mb-5">NOZE is an AI powered air quality monitor that works to<br/> keep you safe. Breathe easy.</p>
+        <button class="btn bg-[#654a9b] px-5 border-none text-white">Join the waitlist</button>
+
 
     </div>
-    <div class="mx-5 w-2/4">
+    <div class="mx-5 lg:w-2/4 sm:w-full">
         <img src="./Image/NOZE-Hero-1.png" class="banner-img"/>
 
     </div>
@@ -65,26 +68,67 @@
    <!-- end -->
 
 <!-- headlines section  -->
-  <section class="headlines bg-slate-300 h-1/4" id="headlines">
+  <section class="headlines bg-[#f3f2f8] h-1/4 " id="headlines">
     <div class="px-20 py-20">
-        <h2 class="text-5xl font-semibold">Noze is making <br/> headlines.</h2>
+        <h2 class="text-5xl font-semibold text-[#210545]">Noze is making <br/> headlines.</h2>
     </div>
 
   </section>
 
 <!-- end -->
 
+<!-- anything but ordinary -->
+ 
+<section class="my-20 flex jusfity-center lg:flex-row lg:px-20 items-center sm:flex flex-col">
+    <div class="lg:w-2/4 mx-10 sm:w-full">
+        <div class="mb-20">
+            <h2 class="text-5xl font-semibold mb-10 text-[#210545]">Anything but<br/> Ordinary</h2>
+            <p class="text-xl">Some would say it's out of this world. That’s not far off.</p>
+        </div>
+
+        <div>
+            
+        </div>
+
+        <div class="mb-10">
+            <h2 class="text-xl font-bold text-[#210545]" id="nasa-link" onclick="nasaeng('nasa')">NASA INSPIRED</h2>
+            <p class="text-xl mb-10" id="nasa-text">Noze is powered by single sensor built in years by nasa innovation.Our technology<br/>
+                raises the bar to new heights. by using the digital sense of smell to keep track the air you breathing.
+            </p>
+        </div>
+
+         <div >
+            <h2 class="text-xl font-bold text-[#210545]" id="eng-link" onclick="nasaeng('eng')">ENGINEER TO THINK</h2>
+            <p class="text-xl mb-10" id="eng-text">Noze is powered by single sensor built in years by nasa innovation.Our technology<br/>
+                raises the bar to new heights. by using the digital sense of smell to keep track the air you breathing.
+            </p>
+        </div>
+
+    </div>
+    <div class="lg:w-2/4 mx-10 sm:w-full">
+         <video autoplay loop id="nasa">
+                <source src="./Image/nasa.mp4" type="video/mp4" id="nasa-inner">
+               
+          </video>
+           <img src="./Image/Engineertothink.gif" class="eng-image" id="eng-image"/>
+
+
+    </div>
+</section>
+
+<!-- end -->
+
 <!-- conquer the virus -->
-    <section class="virus flex jusfity-center py-10 ">
-        <div class="mx-5 w-2/4">
+    <section class="virus flex jusfity-center lg:flex-row py-10 sm:flex flex-col mb-10">
+        <div class="mx-5 lg:w-2/4 sm:w-full">
             <video autoplay loop>
                 <source src="./Image/conquerthevirus.mp4" type="video/mp4">
                
                 </video>
 
         </div>
-        <div class="mx-5 w-2/4">
-            <h2 class="text-6xl mb-10">Сonquer the Virus</h2>
+        <div class="mx-5 lg:w-2/4 sm:w-full">
+            <h2 class="text-6xl mb-10 text-[#210545]">Сonquer the Virus</h2>
             <p class="text-xl">Noze tracks the airborne markers (VOCs) associated with the Coronavirus family. Our AI uses that information to deliver a real-time risk index that will not only tell you if your space is prone to spreading the virus, but whether there’s a chance the virus is actually in the air.</p>
 
         </div>
@@ -94,13 +138,13 @@
 
 
 <!--  mold -->
-    <section class="mold flex jusfity-center py-10 mt-10">
-         <div class="mx-5 w-2/4 pl-20">
-            <h2 class="text-6xl mb-10">Break the Mold</h2>
+    <section class="mold flex jusfity-center lg:flex-row py-10 mt-10 sm:flex flex-col">
+         <div class="mx-5 lg:w-2/4 lg:pl-20 sm:w-full">
+            <h2 class="text-6xl mb-10 text-[#210545]">Break the Mold</h2>
             <p class="text-xl">NOZE monitors the air for spores and other markers associated with the most common types of indoor mold. Our mold index will tell you if it's likely that there’s mold around and whether your space is in danger of being a breeding ground.</p>
 
         </div>
-        <div class="mx-5 w-2/4">
+        <div class="mx-5 lg:w-2/4 sm:w-full">
             <video autoplay loop>
                 <source src="./Image/Mold.mp4" type="video/mp4">
                
@@ -115,28 +159,105 @@
 <!-- matters -->
 <section class="my-20">
     <div class="text-center">
-        <h2 class="text-5xl mb-10">What you can't see matters</h2>
+        <h2 class="text-6xl mb-10 text-[#210545]">What you can't see matters</h2>
         <span class="font-semibold ">NOZE also monitors a range of other pollutants to help make indoor<br/> spaces safer places to live, work, and visit.</span>
 
     </div>
-    <div class="flex justify-center my-20 px-20">
-        <div class="matters mx-5 w-1/4">
-            <h3 class="matters-text text-xl hover:font-semibold my-2">Carbon Dioxide</h3>
-            <h3 class="matters-text text-xl hover:font-semibold my-2">Amonia</h3>
-            <h3 class="matters-text text-xl hover:font-semibold my-2">Formal Dehide</h3>
-            <h3 class=" matters-text text-xl hover:font-semibold my-2">Nitrogen Dioxide</h3>
-            <h3 class="matters-text text-xl hover:font-semibold my-2">Butanal</h3>
-            <h3 class="matters-text text-xl hover:font-semibold my-2">Particuler Matter</h3>
-            <h3 class="matters-text text-xl hover:font-semibold my-2">Ethnot</h3>
-            <h3 class="matters-text text-xl hover:font-semibold my-2">Tobacco Odur</h3>
-              <h3 class="matters-text text-xl hover:font-semibold my-2">Humidity</h3>
+    <div class="flex justify-center lg:flex-row my-20 lg:px-20 sm:flex flex-col">
+        <div class="matters mx-5 lg:w-1/4 sm:w-full">
+            <h3 class="matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('carbon')" >Carbon Dioxide</h3>
+            <h3 class="matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('amonia')">Amonia</h3>
+            <h3 class="matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('formal')">Formal Dehide</h3>
+            <h3 class=" matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('nitrogen')">Nitrogen Dioxide</h3>
+            <h3 class="matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('butanol')">Butanal</h3>
+            <h3 class="matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('particulate')">Particulate Matter</h3>
+            <h3 class="matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('ethanol')">Ethanol</h3>
+            <h3 class="matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('tobacco')">Tobacco Odur</h3>
+              <h3 class="matters-text text-xl hover:font-semibold my-2 text-[#210545]" onmouseover="matterstopic('humidity')">Humidity</h3>
 
         </div>
-        <div class="matters-img mx-5 w-3/4">
-            <div class="flex flex-col carbon rounded-full relative">
-                <h2 class="text-4xl text-white mt-20 text-center mb-20">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+
+        <!-- Carbon Dioxide -->
+        <div class="matters-img mx-5 lg:w-3/4 sm:w-full">
+            <div class="flex flex-col carbon rounded-full relative" id="carbon">
+                <h2 class="text-4xl text-white pt-20 text-center">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
                 <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
             </div>
+
+            <!-- end -->
+
+
+            <!-- amonia -->
+
+              <div class="flex flex-col amonia rounded-full relative" id="amonia">
+                <h2 class="text-4xl text-white pt-20 text-center">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+                <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
+            </div>
+
+            <!-- end -->
+
+            <!-- formal dehide -->
+
+              <div class="flex flex-col formal rounded-full relative" id="formal">
+                <h2 class="text-4xl text-white pt-20 text-center">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+                <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
+            </div>
+
+            <!-- end -->
+
+            <!-- Nitrogen Dioxide -->
+
+              <div class="flex flex-col nitrogen rounded-full relative" id="nitrogen">
+                <h2 class="text-4xl text-white pt-20 text-center ">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+                <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
+            </div>
+
+            <!-- end -->
+
+            <!-- Butanol -->
+
+              <div class="flex flex-col butanol rounded-full relative" id="butanol">
+                <h2 class="text-4xl text-white pt-20 text-center">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+                <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
+            </div>
+
+            <!-- end -->
+
+            <!-- particulate matter -->
+
+              <div class="flex flex-col particulate rounded-full relative" id="particulate">
+                <h2 class="text-4xl text-white pt-20 text-center">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+                <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
+            </div>
+
+            <!-- end -->
+
+            <!-- Ethanol -->
+              <div class="flex flex-col ethanol rounded-full relative" id="ethanol">
+                <h2 class="text-4xl text-white pt-20 text-center">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+                <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
+            </div>
+
+
+            <!--  -->
+
+            <!-- Tobacco Odur -->
+
+              <div class="flex flex-col tobacco rounded-full relative" id="tobacco">
+                <h2 class="text-4xl text-white pt-20 text-center">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+                <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
+            </div>
+
+            <!-- end -->
+
+            <!-- Humidity -->
+
+              <div class="flex flex-col humidity rounded-full relative" id="humidity">
+                <h2 class="text-4xl text-white pt-20 text-center">Clouds our thinking, lowers <br/>productivity & affects our sleep.</h2>
+                <p class="font-semibold text-center text-xl text-white pt-20">Exhaled breath from people & pets and open flames <br/> are the most common sources.</p>
+            </div>
+
+            <!-- end -->
 
         </div>
 
@@ -148,7 +269,7 @@
 
     <section class="my-20">
         <div class="text-center">
-            <h2 class="text-5xl mb-10">What's more important, form<br/>
+            <h2 class="text-5xl mb-10 text-[#210545]">What's more important, form<br/>
               or function?</h2>
               <p class="mb-20">We didn’t think it was fair to have to choose.</p>
         </div>
@@ -164,15 +285,15 @@
 <!-- end -->
 
 <!-- incredible -->
-<div class="relative">
-    <section class="relative flex my-20 px-20">
-    <div class="incredible w-1/3 mt-20 ml-10 ">
-        <h1 class="text-5xl mb-10">Incredible<br/> power, right<br/> under your<br/> NOZE</h1>
+<div class="relative my-20">
+    <section class="relative flex lg:flex-row my-20 lg:px-20 sm:w-full sm:flex flex-col">
+    <div class="incredible lg:w-1/3 mt-20 ml-10 sm:w-full">
+        <h1 class="text-5xl mb-10 text-[#210545]">Incredible<br/> power, right<br/> under your<br/> NOZE</h1>
     </div>
-    <div  class="w-2/3 flex flex-col">
-    <div class="w-1/3">
-            <div class="px-10 py-10 border-2 boder-solid rounded-full bg-slate-200 mb-10">
-                 <img src="./Image/6.png" class="" width="400" height="500"/>
+    <div  class="lg:w-2/3 flex flex-col sm:w-full px-5">
+    <div class="lg:w-1/3 mobile sm:w-full">
+            <div class=" border-2 boder-none rounded-full bg-slate-200 mb-10">
+                 <img src="./Image/6.png" class="mobileimage" />
 
             </div>
             <div class="text-center">
@@ -183,9 +304,9 @@
            
             
      </div>
-      <div class="w-1/3 ml-auto">
-            <div class="px-10 py-10 border-2 boder-solid rounded-full bg-slate-200 mb-10">
-                 <img src="./Image/8.png" class="" width="400" height="500"/>
+      <div class="lg:w-1/3 lg:ml-auto mobile sm:w-full sm:mb-10">
+            <div class=" border-2 boder-none rounded-full bg-slate-200 mb-10">
+                 <img src="./Image/8.png" class="mobileimage" />
 
             </div>
             <div class="text-center">
@@ -197,9 +318,9 @@
             
      </div>
 
-           <div class="w-1/3 ">
-            <div class="px-10 py-10 border-2 boder-solid rounded-full bg-slate-200 mb-10">
-                 <img src="./Image/9.png" class="" width="400" height="500"/>
+           <div class="lg:w-1/3 mobile sm:w-full sm:mb-10">
+            <div class="border-2 boder-none rounded-full bg-slate-200 mb-10">
+                 <img src="./Image/9.png" class="mobileimage" />
 
             </div>
             <div class="text-center">
@@ -219,14 +340,14 @@
 <!-- end -->
 
 <!-- wondering section -->
-<section class="wondering flex jusfity-center mb-10">
-    <div class="mx-10 w-2/4">
+<section class="wondering flex jusfity-center lg:flex-row mb-10 sm:flex flex-col">
+    <div class="mx-10 lg:w-2/4 sm:w-full" >
         <img src="./Image/wondering.png"  class="wondering-img ml-auto"/>
 
     </div>
-    <div class="w-2/4 ml-auto">
+    <div class="lg:w-2/4 lg:ml-auto sm:w-full">
         <div class="pl-20">
-            <h2 class="text-5xl font-semibold mb-10">Wondering if<br/> you should get<br/> a NOZE?</h2>
+            <h2 class="text-5xl font-semibold mb-10 text-[#210545]">Wondering if<br/> you should get<br/> a NOZE?</h2>
         <p class="mb-10">Any way you slice it, it’s a no brainer.</p>
 
         <ol>
@@ -248,10 +369,10 @@
 
 <!-- FAQ'S -->
 <section class="my-20">
-    <h2 class="text-5xl text-center">FAQ'S</h2>
+    <h2 class="text-5xl text-center text-[#210545]">FAQ'S</h2>
     <div class="w-11/12 flex flex-col items-center mx-auto mt-20">
-        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3">
-        <div class="collapse-title text-xl font-medium">
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3  hover:drop-shadow-xl">
+        <div class="collapse-title text-xl font-medium text-[#654a9b]">
             How is NOZE different from other air quality monitors?
         </div>
         <div class="collapse-content"> 
@@ -260,8 +381,8 @@
         </div>
 
 
-         <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3">
-        <div class="collapse-title text-xl font-medium">
+         <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3  hover:drop-shadow-xl">
+        <div class="collapse-title text-xl font-medium text-[#654a9b]">
            What is a digital nose?
         </div>
         <div class="collapse-content"> 
@@ -270,8 +391,8 @@
         </div>
 
 
-         <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3">
-        <div class="collapse-title text-xl font-medium">
+         <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3  hover:drop-shadow-xl">
+        <div class="collapse-title text-xl font-medium text-[#654a9b]">
             What is the Virus Risk Index?
         </div>
         <div class="collapse-content"> 
@@ -282,8 +403,8 @@
         </div>
 
 
-         <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3">
-        <div class="collapse-title text-xl font-medium">
+         <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3  hover:drop-shadow-xl">
+        <div class="collapse-title text-xl font-medium text-[#654a9b]">
            How does the Virus Risk Index work?
         </div>
         <div class="collapse-content"> 
@@ -292,8 +413,8 @@
         </div>
 
 
-         <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3">
-        <div class="collapse-title text-xl font-medium">
+         <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box w-full text-1xl my-3  hover:drop-shadow-xl">
+        <div class="collapse-title text-xl font-medium text-[#654a9b]">
           What space can it cover?
         </div>
         <div class="collapse-content"> 
@@ -309,9 +430,9 @@
 <!-- stay connected with noze -->
 <section class="connected my-20">
     <div class="text-center">
-        <h2 class="text-5xl font-semibold mb-10">Stay connected with Noze</h2>
+        <h2 class="text-5xl font-semibold mb-10 text-[#210545]">Stay connected with Noze</h2>
         <p class="font-semibold mb-10">NOZE is an AI powered air quality monitor that<br/> works to keep you safe. Breathe easy.</p>
-        <button class="btn btn-info px-5 py-5">Join the Waitlist</button>
+        <button class="btn px-5 py-5 bg-[#654a9b]">Join the Waitlist</button>
 
     </div>
  
@@ -320,14 +441,14 @@
 
 
 <!-- footer section -->
-<footer class="flex justify-between py-5 px-20">
-    <div class="social-icon">
-        <a href="#" class="mx-2 text-2xl"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"  class="mx-2  text-2xl"><i class="fa-brands fa-twitter-square"></i></a>
-        <a href="#"  class="mx-2  text-2xl"><i class="fa-brands fa-instagram-square"></i></a>        
+<footer class="flex justify-between lg:flex-row py-5 lg:px-20 border-2 border-none bg-slate-100 sm:flex flex-col sm:flex items-center">
+    <div class="social-icon sm:pb-3">
+        <a href="#" class="mx-2 text-2xl text-[#654a9b]"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"  class="mx-2  text-2xl text-[#654a9b]"><i class="fa-brands fa-twitter-square"></i></a>
+        <a href="#"  class="mx-2  text-2xl text-[#654a9b]"><i class="fa-brands fa-instagram-square"></i></a>        
 
     </div>
-    <div>
+    <div class="lg:ml-10 sm:pl-5">
         <p>2021 NOZE</p>
 
     </div>
@@ -340,6 +461,9 @@
 
 
 <!-- end -->
+
+
+<script src="./js/script.js"></script>
 
 </body>
 

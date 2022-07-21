@@ -1,16 +1,24 @@
 
 
+header{
+    z-index: 200;
+}
+
 .banner-img{
     z-index: -1;
 }
 
 #banner{
-    z-index: -1;
+    z-index: -9;
+    padding-top: 200px;
+
 }
+
 
 #headlines{
     margin-top: -200px;
-    z-index: 10!important;
+    position: relative;
+    z-index: 100;
 }
 
 .incredible{
@@ -33,7 +41,11 @@
     position: sticky;
         height: fit-content;
         top: 20px;
-        scroll-behavior: auto;
+   
+
+}
+
+.matters-text{
 
 }
 
@@ -53,4 +65,145 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+
+.amonia {
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.formal {
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.nitrogen {
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.butanol {
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.particulate {
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters7.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.ethanol {
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters8.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.tobacco {
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters9.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.humidity {
+    width: 100%;
+    height: 480px;
+    background-image: url("../Image/matters10.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.eng-image{
+
+    border-radius: 50%;
+    height: 500px;
+     width: 520px;
+}
+
+#nasa-inner{
+    width: 100%;
+    height: auto;
+}
+
+
+.mobile{
+    width: 350px;
+    height: 400px;
+    
+}
+
+.mobileimage{
+    padding: 20px;
+}
+
+
+
+
+/* custom responsive  */
+
+
+@media (max-width: 575.98px) {
+    .eng-image {
+    
+            border-radius: 50%;
+            height: 400px;
+            width: 420px;
+        }
+
+          .matters-img {
+             position: sticky;
+             height: fit-content;
+             top: 40px;
+        
+        
+        }
+                .incredible {
+                    position: sticky;
+                    height: fit-content;
+                    top: 20px;
+                }
+
+                        .mobile {
+                            width: 100% ;
+                            height: auto;
+                            margin-bottom: 20px;
+            
+                        }
+
+   
 }
